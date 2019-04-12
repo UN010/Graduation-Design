@@ -13,7 +13,7 @@ net = dn.load_net("/home/zheng/Public/Graduation_Design/darknet/cfg/yolov3-tiny.
 meta = dn.load_meta("/home/zheng/Public/Graduation_Design/darknet/cfg/coco.data".encode('utf-8'))
 
 # And then down here you could detect a lot more images like:
-r = dn.detect(net, meta, "/home/zheng/Public/Graduation_Design/darknet/data/eagle.jpg".encode('utf-8'))
+r = dn.detect(net, meta, "/home/zheng/Public/Graduation_Design/darknet/statictmp.jpg".encode('utf-8'))
 print (r)
 r = dn.detect(net, meta, "/home/zheng/Public/Graduation_Design/darknet/data/giraffe.jpg".encode('utf-8'))
 print (r)
