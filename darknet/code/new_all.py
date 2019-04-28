@@ -20,7 +20,7 @@ COLORS = np.random.randint(0, 255, size=(len(LABELS), 3),
 # derive the paths to the YOLO weights and model configuration
 #weightsPath = os.path.sep.join([args["yolo"], "yolov3.weights"])					#yolov3.weights					
 #configPath = os.path.sep.join([args["yolo"], "yolov3.cfg"])							
-weightsPath = "/home/zheng/Public/Graduation_Design/darknet/python/yolov3.weights" 
+weightsPath = "/home/zheng/Public/yolov3.weights" 
 configPath = "/home/zheng/Public/Graduation_Design/darknet/cfg/yolov3.cfg"
 # load our YOLO object detector trained on COCO dataset (80 classes)
 # and determine only the *output* layer names that we need from YOLO
@@ -31,7 +31,7 @@ ln = [ln[i[0] - 1] for i in net.getUnconnectedOutLayers()]
 # initialize the video stream, pointer to output video file, and
 # frame dimensions
 #vs = cv2.VideoCapture(args["input"])
-vs = cv2.VideoCapture("/home/zheng/Public/Graduation_Design/darknet/video/3.mp4")
+vs = cv2.VideoCapture("/home/zheng/Public/video/3.mp4")
 writer = None
 # try to determine the total number of frames in the video file
 try:
